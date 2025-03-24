@@ -11,6 +11,16 @@ public class CountDigits {
 
     //use do while loop for this exercise
     public static int countDigits(int num) {
+        int counter = 0;
+
+        if (num == 0) return 1;
+
+        do {
+            num = num / 10;
+            counter++;
+        }
+        while(num > 0);
+        return counter;
 
     }
 
